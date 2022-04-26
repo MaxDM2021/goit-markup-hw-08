@@ -1,0 +1,64 @@
+
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background-color: var(--accent-color);
+  
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+
+    &.primery {
+      padding: 10px 32px;
+    
+      background-color: var(--accent-color);
+      color: var(--title-text-color);
+      font-weight: 700;
+      line-height: 1.88;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+    
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: var(--second-accent-color);
+      }
+      
+    }
+
+    &.secondary {
+      color: var(--primary-text-color);
+      background-color: var(--second-backrgound-color);
+      cursor: pointer;
+    
+      transition-property: background-color, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color);
+        color: var(--title-text-color);
+      }
+      &.item {
+        background-color: var(--accent-color);
+        color: var(--title-text-color);
+      }
+    }
+    
+  }
+  
+
+  
+ 
+
