@@ -1,7 +1,12 @@
 .logo-header {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+
+padding: 0;
+margin-right: 90px;
+
+
+    // margin-right: 93px;
+    // padding-top: 24px;
+    // padding-bottom: 24px;
   
     color: var(--primary-text-color);
     font-family: Raleway;
@@ -13,5 +18,12 @@
   
   .logo-web {
     color: var(--accent-color);
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .logo-header {
+      margin-right: 95px;
+    }
   }
   

@@ -19,19 +19,23 @@
   </head>
   <body class="page">
     <!-- HEADER -->
-    <section class="header">
+    <section class="section header">
       <header>
-        <div class="container main-nav">
+        <div class="container header__container">
           <a href="./index.html" class="logo-header">
             <span class="logo-web">Web</span>Studio</a
           >
           <nav class="site-nav">
             <ul class="site-nav-header">
               <li class="site-nav-header__item">
-                <a href="./index.html" class="site-nav-header__link current"> Студия</a>
+                <a href="./index.html" class="site-nav-header__link current">
+                  Студия</a
+                >
               </li>
               <li class="site-nav-header__item">
-                <a href="./portfolio.html" class="site-nav-header__link"> Портфолио</a>
+                <a href="./portfolio.html" class="site-nav-header__link">
+                  Портфолио</a
+                >
               </li>
               <li class="site-nav-header__item">
                 <a href="" class="site-nav-header__link">Контакты</a>
@@ -58,11 +62,41 @@
               </li>
             </ul>
           </div>
+          <button  type="button"  class="mobile-menu-btn" data-menu-open >
+            <svg class="mobile-menu-btn__icon" width="40" height="40">
+              <use href="./img/sprite.svg#burger-menu-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu" data-menu >
+          <div class="container mobile-menu__container">
+            <button  type="button" class="mobile-menu__close-btn" data-menu-close >
+              <svg class="mobile-menu__close-icon" width="40" height="40">
+                <use href="./img/sprite.svg#mobile-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__item mobile-menu__item-link ">Студия</a></li>
+              <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__item mobile-menu__item-link ">Портфолио</a></li>
+              <li class="mobile-menu__item"><a href="" class="mobile-menu__item mobile-menu__item-link ">Контакты</a></li>
+            </ul>
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__contacts-item"><a class="mobile-menu__contacts-item mobile-menu__contacts-link" href="">+38 096 111 11 11</a></li>
+              <li class="mobile-menu__contacts-item"><a class="mobile-menu__contacts-item mobile-menu__contacts-link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu__social">
+              <li class="mobile-menu__social-item"><a class="mobile-menu__social-item mobile-menu__social-link" href="">Instagram</a></li>
+              <li class="mobile-menu__social-item"><a class="mobile-menu__social-item mobile-menu__social-link" href="">Twitter</a></li>
+              <li class="mobile-menu__social-item"><a class="mobile-menu__social-item mobile-menu__social-link" href="">Facebook</a></li>
+              <li class="mobile-menu__social-item"><a class="mobile-menu__social-item mobile-menu__social-link-last" href="">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </header>
     </section>
     <!-- HEADER END-->
     <!-- HERO -->
+
     <main>
       <section class="hero">
         <div class="container">
@@ -73,12 +107,13 @@
           <button data-modal-open class="button primery" type="button">
             Заказать услугу
           </button>
-         
         </div>
       </section>
-      <!-- HERO  END-->
-      <!-- FEATURES -->
-      <section class="section">
+    </main>
+
+    <!-- HERO  END-->
+    <!-- FEATURES -->
+    <!-- <section class="section">
         <div class="container feature">
           <ul class="feature-list">
             <li class="item">
@@ -131,16 +166,17 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- FEATURES END-->
-      <!-- SECTION -->
-      <section class="section featufer">
+      </section> -->
+    <!-- FEATURES END-->
+    <!-- SECTION -->
+    <!-- <section class="section featufer">
         <div class="container">
           <h2 class="section-titel">Чем мы занимаемся</h2>
           <ul class="section-list">
             <li class="section-img">
               <img
-                src="./img/img1.jpg"
+              srcset="./img/mobile/team-1.jpg 1x, ./img/mobile/team-1@2x.jpg 2x "
+                src="./img/mobile/team-1.jpg"
                 alt="компьютер"
                 width="370"
                 height="294"
@@ -167,10 +203,10 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- SECTION END -->
-      <!-- OUR TEAM -->
-      <section class="section team">
+      </section> -->
+    <!-- SECTION END -->
+    <!-- OUR TEAM -->
+    <!-- <section class="section team">
         <div class="container team">
           <h2 class="section-titel">Наша команда</h2>
           <ul class="section-team">
@@ -349,10 +385,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- CLIENTS -->
-      <section class="section clients">
+    <!-- OUR TEAM END -->
+    <!-- CLIENTS -->
+
+    <!-- <section class="section clients">
         <div class="container clients">
           <h2 class="section-titel">Постоянные клиенты</h2>
           <ul class="clients-list">
@@ -399,15 +437,13 @@
               </a>
             </li>
           </ul>
-          <!-- CLIENTS END-->
         </div>
       </section>
+    </main> -->
 
-      <!-- OUR TEAM END -->
-    </main>
-
+    <!-- CLIENTS END-->
     <!-- FOOTER -->
-    <!-- <section class="section footer"> -->
+    <!--     
     <footer class="footer">
       <div class="container">
         <div class="container-footer">
@@ -483,13 +519,12 @@
           </form>
         </div>
       </div>
-    </footer>
-    <!-- </section> -->
+    </footer> -->
+
     <!-- FOOTER END-->
+    <!-- MODAL WINDOW-->
 
-<!-- MODAL WINDOW-->
-
-<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <a data-modal-close href="" class="link-close">
       <svg class="icon-close" with="18" height="18">
@@ -501,8 +536,8 @@
         Оставьте свои данные, мы вам перезвоним
       </p>
       <div class="form-field">
-        <!-- На всякий случай в label нельзя вкладывать div, div можно заменить на span!!  -->
-        <label for="name">Имя</label>
+    <!-- На всякий случай в label нельзя вкладывать div, div можно заменить на span!!  -->
+    <label for="name">Имя</label>
         <div class="input-svg">
           <input
             type="text"
@@ -522,8 +557,8 @@
       <div class="form-field">
         <label for="tel">Телефон</label>
         <div class="input-svg">
-          <!-- Позиционировать иконки можно только относительно парных тегов!! Инпут одинарный тег -->
-          <input
+    <!-- Позиционировать иконки можно только относительно парных тегов!! Инпут одинарный тег -->
+    <input
             type="tel"
             name="tel"
             id="tel"
@@ -569,9 +604,6 @@
           Соглашаюсь с рассылкой и принимаю&nbsp;
           <a href="" class="contract">Условия договора</a>
         </label>
-
-        <!-- <input type="checkbox" id="policy" name="policy" />
-        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label> -->
       </div>
 
       <button type="submit" class="send-btn">Отправить</button>
@@ -579,8 +611,8 @@
   </div>
 </div>
 
-<!-- MODAL WINDOW-END -->
-
+    <!-- MODAL WINDOW-END -->
   </body>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </html>
