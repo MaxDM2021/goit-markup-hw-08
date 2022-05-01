@@ -3,17 +3,6 @@
 }
 
 
-// ====== 0-767 ======
-
-// @media screen and (max-width: 767px) {
-//   .container {
-//     margin: 0 auto;
-//   }
-// }  
-
-
-
-
 // 480+
 @media screen and (min-width: 480px) {
   .container {
@@ -28,7 +17,8 @@
 // 768+
 @media screen and (min-width: 768px) {
 
-.section.header {
+.section.header,
+ .section{
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -55,26 +45,3 @@
 
 
 
-// .container {
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     padding-left: 15px;
-//     padding-right: 15px;
-
-//     // width: 1200px;
-//     outline: 2px solid tomato;
-
-//   @media screen and (min-width: 480px) {
-//     width: 480px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 1200px;
-//   }
-
-//   }
