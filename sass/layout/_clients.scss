@@ -1,41 +1,104 @@
+.section.clients {
+  padding: 60px 15px;
+}
+
 .clients-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .clients-list-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 170px;
-    height: 92px;
-    outline: 1px solid #afb1b8;
-    border-radius: 4px;
-  
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover,
-    &:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.clients-link {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 92px;
+  outline: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
     outline: 1px solid var(--accent-color);
   }
-  
+}
+
+.clients-list-icon {
+  fill: var(--primary-icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-list-link:hover &,
+  .clients-list-link:focus & {
+    fill: var(--accent-color);
   }
-  
-  .clients-list-icon {
-    fill: var(--primary-icon-color);
-  
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
-    .clients-list-link:hover &,
-    .clients-list-link:focus & {
-      fill: var(--accent-color);
+}
+
+// ====0-767====
+
+@media screen and (max-width: 767px) {
+  .clients-link:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .clients-link:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .clients-list-link {
+    width: 210px;
+  }
+}
+
+// ====768+====
+
+@media screen and (min-width: 768px) {
+  .clients-link:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .clients-link:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  .clients-list-link {
+    width: 226px;
+  }
+}
+
+// ====1200+====
+
+@media screen and (min-width: 1200px) {
+  .section.clients .clients-link {
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 6) {
+      margin-bottom: 0;
     }
   }
-  
 
-  
+  .section.clients {
+    padding: 94px 0px;
+  }
+
+  .clients-list-link {
+    width: 170px;
+  }
+}

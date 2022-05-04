@@ -1,35 +1,31 @@
-
 .hero {
   padding-left: auto;
-    padding-right: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-color: #c4c4c4;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-
+  padding-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
 .main-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-  
+
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-    }
+}
 
 // ====== 0-767 ======
 
-
 @media screen and (max-width: 767px) {
-
-.hero {
+  .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -38,74 +34,69 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero {
-background-image: linear-gradient(
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)
-), url(../img/mobile/jpg@1x@2x/header@2x.jpg);
-}
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/mobile/jpg@1x@2x/header@2x.jpg);
+    }
+  }
 }
 
-
-}
-
-// ====== 0-767=END======
 // ======= 768+ ======
 
 @media screen and (min-width: 768px) {
   .hero {
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ),
-  url(../img/tablet/jpg@1x@2x/header.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/tablet/jpg@1x@2x/header.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/tablet/jpg@1x@2x/header@2x.jpg);
+    }
+  }
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero {
-background-image: linear-gradient(
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)
-), url(../img/tablet/jpg@1x@2x/header@2x.jpg);
-}
-}
-
-}
-
-// ======= 768+=END ======
 //====== 1200+ =======
 
 @media screen and (min-width: 1200px) {
-
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/desktop/jpg@1x@2x/header.jpg);
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/desktop/jpg@1x@2x/header.jpg);
   }
-  
+
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url(../img/desktop/jpg@1x@2x/header@2x.jpg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/desktop/jpg@1x@2x/header@2x.jpg);
+    }
   }
-  }
-  
+
   .main-title {
     font-size: 44px;
     line-height: 1.36;
   }
-
 }
-
