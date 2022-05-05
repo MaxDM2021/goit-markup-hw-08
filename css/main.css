@@ -101,7 +101,6 @@ ol {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
   }
 }
 @media screen and (min-width: 768px) {
@@ -113,13 +112,11 @@ ol {
 
   .container {
     width: 738px;
-    outline: 2px solid tomato;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1170px;
-    outline: 2px solid tomato;
   }
 }
 .button {
@@ -741,7 +738,7 @@ form {
   }
 
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: white;
@@ -801,7 +798,7 @@ form {
   .mobile-menu__contacts-link {
     display: block;
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--accent-color);
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -813,6 +810,15 @@ form {
   }
   .mobile-menu__contacts-link:hover, .mobile-menu__contacts-link:focus {
     color: var(--accent-color);
+  }
+  .mobile-menu__contacts-link.mail {
+    color: var(--second-text-color);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
   }
 
   .mobile-menu__contacts {
@@ -1649,7 +1655,7 @@ form {
   }
 
   .portfolio-list-item {
-    margin-right: 26px;
+    margin-right: 25px;
   }
   .portfolio-list-item:nth-child(2n) {
     margin-right: 0px;
